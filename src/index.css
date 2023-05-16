@@ -1,0 +1,697 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+
+* {
+  cursor: url("./assets/cursor.cur"), auto;
+}
+
+/* Setting the default background color to white and the default text color to black. */
+:root {
+  --bg-color: #222;
+  --txt-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* navigation starts here */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #393939;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 2;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  min-height: 4.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+  margin: 0 5vw;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.75rem;
+}
+
+.navbar-branding {
+  color: var(--txt-color);
+  transform: scale(1.1);
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-branding h1::first-letter {
+  color: #5d00ff;
+  font-size: 110%;
+}
+
+.logo {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brandstyle {
+  color: rgb(240, 49, 43);
+}
+
+.nav-link {
+  color: var(--txt-color);
+  text-decoration: none;
+  padding: 0.5rem;
+  background-image: radial-gradient(
+      18% 28% at 24% 50%,
+      #cefaffff 7%,
+      #073aff00 100%
+    ),
+    radial-gradient(18% 28% at 18% 71%, #ffffff59 6%, #073aff00 100%),
+    radial-gradient(70% 53% at 36% 76%, #73f2ffff 0%, #073aff00 100%),
+    radial-gradient(42% 53% at 15% 94%, #ffffffff 7%, #073aff00 100%),
+    radial-gradient(42% 53% at 34% 72%, #ffffffff 7%, #073aff00 100%),
+    radial-gradient(18% 28% at 35% 87%, #ffffffff 7%, #073aff00 100%),
+    radial-gradient(31% 43% at 7% 98%, #ffffffff 24%, #073aff00 100%),
+    radial-gradient(21% 37% at 72% 23%, #d3ff6d9c 24%, #073aff00 100%),
+    radial-gradient(35% 56% at 91% 74%, #8a4ffff5 9%, #073aff00 100%),
+    radial-gradient(74% 86% at 67% 38%, #6dffaef5 24%, #073aff00 100%),
+    linear-gradient(125deg, #4eb5ffff 1%, #4c00fcff 100%);
+  background-size: 0% 0.188rem;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: background-size 300ms ease;
+}
+
+.nav-link:hover {
+  background-size: 100% 0.188rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 1.563rem;
+  height: 0.188rem;
+  margin: 0.313rem auto;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease-in-out;
+  color: white;
+}
+
+.mode__con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  min-height: 100vh;
+}
+
+/* Setting the background of the hero section to a gradient. */
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 3rem;
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+}
+
+.left-hero {
+  width: 50vw;
+  padding-left: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.txt {
+  font-size: 3.5rem;
+  font-family: "Carter One", sans-serif;
+  font-weight: bold;
+  color: #8358cd;
+}
+
+.txt__upper {
+  font-weight: 800;
+  color: var(--txt-color);
+}
+
+.txt__under {
+  margin-top: 30px;
+  font-weight: 700;
+  color: rgb(83, 81, 81);
+  font-size: 1.3rem;
+}
+
+.desc {
+  padding: 0.5rem;
+  font-weight: 500;
+  color: var(--txt-color);
+  opacity: 0.8;
+}
+
+.btn {
+  font-size: 1rem;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #7b3fe4;
+  padding: 1rem;
+  color: var(--txt-color);
+  margin-top: 0.5rem;
+  box-shadow: 4px 4px 0px #7b3fe4;
+}
+
+.btn:hover {
+  /*transform: scale(1.1);*/
+  color: rgb(239, 248, 252);
+  background-color: #7b3fe4;
+  box-shadow: unset;
+  border: unset;
+}
+
+.txt::first-letter {
+  font-size: 3.7rem;
+}
+
+.exclamation {
+  color: #7b3fe4;
+}
+
+.right-hero {
+  width: auto;
+  display: grid;
+  place-items: center;
+}
+
+.right-hero img {
+  border-radius: 50%;
+}
+
+/* tech stack section css */
+.tech_stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  padding: 1.875rem 0;
+  background-color: var(--bg-color);
+  text-align: center;
+  color: var(--txt-color);
+}
+.stack-heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.desc2 {
+  margin-top: 20px;
+  padding: 0.5rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.stackIcons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+.stackIcons img {
+  width: 4.38rem;
+  height: 4.38rem;
+}
+/* css for hero section starts */
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.875rem 0;
+  background-color: var(--bg-color);
+}
+
+.project-heading {
+  display: grid;
+  place-items: center;
+  padding: 1.875rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--txt-color);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  place-items: center;
+  gap: 3.75rem;
+}
+
+.card {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 12px;
+}
+
+.card__cover {
+  width: 100%;
+}
+
+.card__cover img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 290px;
+  height: 160px;
+}
+
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem;
+  background-color: white;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  height: 295px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.card__content p {
+  max-height: 6.25rem;
+  width: 15.625rem;
+}
+
+.cardBtnContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.cardBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-width: 0.063rem;
+  border-style: solid;
+  border-color: #7b3fe4;
+  background: white;
+  border-radius: 0.313rem;
+  padding: 0.5rem;
+}
+
+.cardBtn .icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  vertical-align: middle;
+}
+.cardBtn:hover .icon {
+  filter: invert(100%);
+}
+.cardBtn:hover {
+  background: #7b3fe4;
+  color: white;
+}
+
+/* about section CSS */
+.contact {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  color: var(--txt-color);
+}
+
+.contact-heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.contactEmail {
+  width: 990px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3232327a;
+  border-radius: 15px;
+}
+.contactEmail a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.7rem;
+  color: var(--txt-color);
+  vertical-align: middle;
+  opacity: 0.9;
+}
+.contactEmail img {
+  width: 2.7rem;
+  height: 3rem;
+}
+
+.contactEmail a:hover, .contactEmail img:hover {
+opacity: 1;
+}
+/* social icons in fixed position */
+.socials {
+  position: fixed;
+  left: 10px;
+  top: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.socials img {
+  width: 3rem;
+  height: 3rem;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.socials img:hover {
+  background-color: #8358cd;
+}
+
+/* footer CSS */
+.ftr {
+  background-color: #393939;
+  min-height: 10vh;
+  display: grid;
+  place-items: center;
+  color: rgb(229, 229, 229);
+}
+
+/* Hamburger navigation bar styling starts here. */
+
+/* This is a media query. It is saying that if the screen is less than 769px, then do the following. */
+@media only screen and (max-width: 769px) {
+  header {
+    padding: 0 1.25rem;
+  }
+
+  .navbar {
+    padding: 0;
+    margin: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .hamburger span {
+    width: 1.6rem;
+    height: 2px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  /* hamburger active state */
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    rotate: 45deg;
+    translate: -5px 5px;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    rotate: -45deg;
+    translate: -5px -9px;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    gap: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: unset;
+    background-color: var(--bg-color);
+    padding: 0 0;
+    width: 0;
+    height: calc(100vh - 70px);
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .nav-item {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px 20px;
+  }
+
+  .nav-menu.active {
+    width: 100vw;
+  }
+
+  .stackIcons img {
+    width: 2.38rem;
+    height: 2.38rem;
+  }
+
+  .socials {
+    left: 7px;
+  }
+  .socials img {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .left-hero {
+    padding-left: 4rem;
+  }
+
+  figcaption {
+    transform: translateY(-1rem);
+    padding-top: 0.8rem;
+    padding-bottom: 1rem;
+  }
+
+  #hero__img {
+    margin-top: 4rem;
+    margin-right: 8rem;
+    width: 250px;
+    height: 250px;
+  }
+
+  .fig {
+    margin: 0 9.2rem;
+    padding: 0.2rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contactEmail {
+    width: 640px;
+    height: 250px;
+  }
+  .socials {
+    left: 4px;
+  }
+}
+
+@media only screen and (max-width: 913px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: unset;
+  }
+
+  .left-hero {
+    width: 100%;
+    padding-left: unset;
+    padding: 7rem;
+    text-align: center;
+  }
+  .txt {
+    font-size: 2.7;
+  }
+
+  .txt__upper {
+    margin-top: 4.375rem;
+  }
+
+  .right-hero {
+    width: 100%;
+  }
+
+  #hero__img {
+    margin-bottom: 4rem;
+    margin-right: unset;
+  }
+}
+
+@media only screen and (max-width: 821px) {
+  .left-hero {
+    padding: 5.5rem;
+     
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .left-hero {
+    padding: 4.5rem;
+  }
+
+  .fig {
+    margin: 0 4rem;
+    padding: 0.2rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .stackIcons {
+    gap: 40px;
+  }
+
+  .contactEmail {
+    width: 370px;
+    height: 180px;
+  }
+
+  .contactEmail a {
+    font-size: 1.3rem;
+    gap: 8px;
+  }
+
+  .contactEmail img {
+    width: 1.7rem;
+    height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 541px) {
+  body{
+    font-size: 0.9rem;
+  } 
+  .left-hero {
+    padding: 3rem;
+  }
+
+  #hero__img {
+    width: 270px;
+    height: 270px;
+  }
+  .txt,
+  .txt::first-letter {
+    font-size: 2.1rem;
+  }
+
+  .stack-heading,
+  .project-heading,
+  .contact-heading {
+    font-size: 1.5rem;
+  }
+
+  .fig {
+    margin: 0 5rem;
+  }
+
+  .stackIcons {
+    gap: 25px;
+  }
+
+  .socials {
+    left: 0;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    opacity: 0.7;
+  }
+  .socials img {
+    width: 2.3rem;
+    height: 2.3rem;
+    padding: 6px;
+  }
+  .socials:hover {
+    opacity: 1;
+  }
+
+  .contactEmail {
+    width: 290px;
+    height: 120px;
+  }
+
+  .contactEmail a {
+    font-size: 1.1rem;
+    gap: 8px;
+  }
+
+  .contactEmail img {
+    width: 1.4rem;
+    height: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .left-hero {
+    padding: 2rem;
+  }
+
+  #hero__img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .fig {
+    margin: 0 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  #hero__img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .fig {
+    margin: 0 1rem;
+  }
+
+  .stackIcons {
+    gap: 15px;
+  }
+}
