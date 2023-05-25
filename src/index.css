@@ -49,29 +49,17 @@ li {
 
 .navbar-branding {
   color: var(--txt-color);
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: bold;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 .navbar-branding h1::first-letter {
   color: #5d00ff;
   font-size: 110%;
-}
-
-.logo {
-  width: 100%;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.brandstyle {
-  color: rgb(240, 49, 43);
 }
 
 .nav-link {
@@ -323,6 +311,8 @@ section {
   background: white;
   border-radius: 0.313rem;
   padding: 0.5rem;
+  color: #000;
+  text-decoration: none;
 }
 
 .cardBtn .icon {
@@ -591,11 +581,16 @@ opacity: 1;
   .contactEmail {
     width: 370px;
     height: 180px;
+    padding: 20px 0;
   }
 
   .contactEmail a {
     font-size: 1.3rem;
-    gap: 8px;
+     display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
   }
 
   .contactEmail img {
@@ -608,6 +603,9 @@ opacity: 1;
   body{
     font-size: 0.9rem;
   } 
+  .navbar-branding {
+    font-weight: 600;
+  }
   .left-hero {
     padding: 3rem;
   }
