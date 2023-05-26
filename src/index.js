@@ -3,7 +3,7 @@ import './index.css'
 
 // importing images from my assets folder
 import CSS3 from './assets/css3_icon.svg'
-import devblok from './assets/devblok.png'
+import Portfolio from './assets/Portfolio.png'
 import git from './assets/git_icon.svg'
 import github from './assets/github_icon.svg'
 import github2 from './assets/github_icon(2).svg'
