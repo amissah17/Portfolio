@@ -170,7 +170,7 @@ section {
   margin-top: 0.5rem;
   box-shadow: 4px 4px 0px #7b3fe4;
 }
-.btn a {text-decoration: none;}
+a.btn  {text-decoration: none;}
 .btn:hover {
   /*transform: scale(1.1);*/
   color: rgb(239, 248, 252);
