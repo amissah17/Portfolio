@@ -157,7 +157,7 @@ section {
   color: var(--txt-color);
   opacity: 0.8;
 }
-soclinks {
+.soclinks {
 margin-top: 0.5rem;
 }
 .btn {
