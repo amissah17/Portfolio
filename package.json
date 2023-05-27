@@ -18,8 +18,7 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack --config ./config/webpack.dev.js",
-    "dev": "webpack serve --config ./config/webpack.dev.js",
+    "dev": "webpack --config ./config/webpack.dev.js && webpack serve --config ./config/webpack.dev.js",
     "build": "webpack --config ./config/webpack.prod.js"
   },
   "keywords": [],
