@@ -10,12 +10,12 @@ html,
 body {
     
     min-height: 100vh;
-    min-width: 100vw;
 }
 
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
 
 img,
