@@ -788,8 +788,8 @@ opacity: 1;
   }
 
   .right-hero {
-    width: 67%;
-    height: 67%;
+    width: 250px;
+    height: 250px;
   }
   #hero__img {
     width: 100%;
@@ -798,17 +798,12 @@ opacity: 1;
     width: 100%;
   }
 
-  .card__cover {
-    width: 100%;
+  .fig {
+    margin: 0 1rem;
   }
   .card__content p {
     width: 100%;
   }
-
-  .fig {
-    margin: 0 1rem;
-  }
-
   .stackIcons {
     gap: 15px;
   }
