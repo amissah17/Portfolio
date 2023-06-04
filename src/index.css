@@ -102,6 +102,7 @@ section {
   background-color: var(--bg-color);
   display: grid;
   place-items: center;
+  box-sizing: content-box;
 }
 
 /* Setting the background of the hero section to a gradient. */
@@ -109,6 +110,7 @@ section {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 3rem;
+  place-items: center;
 }
 
 .left-hero {
@@ -470,6 +472,7 @@ opacity: 1;
   .hero {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+    
   }
 
   .left-hero {
@@ -486,8 +489,8 @@ opacity: 1;
   }
 
   .right-hero{
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
     margin: auto;
   }
 
@@ -596,7 +599,18 @@ opacity: 1;
     text-align: center;
   }
   .right-hero{
+    width: 250px;
+    height: 250px;
     margin: auto;
+  }
+
+  .right-hero img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .txt {
+    font-size: 3rem;
   }
   .socials {
     left: 7px;
@@ -616,7 +630,9 @@ opacity: 1;
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-
+  .card {
+    width: 100%;
+  }
   .stackIcons {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -670,14 +686,20 @@ opacity: 1;
     width: 85%;
     margin: auto;
   }
+  .card {
+    width: 100%;
+  }
 
+.hero {
+  padding:100px 0 70px;
+}
   .left-hero {
     width: 100%;
   }
 
   #hero__img {
-    width: 270px;
-    height: 270px;
+    width: 250px;
+    height: 250px;
   }
   .txt,
   .txt::first-letter {
@@ -749,6 +771,9 @@ opacity: 1;
     height: 260px;
   }
 
+  .card {
+    width: 100%;
+  }
 
   .fig {
     margin: 0 1.5rem;
@@ -756,9 +781,21 @@ opacity: 1;
 }
 
 @media only screen and (max-width: 376px) {
+  .hero, .tech_stack, .projects, .contact {
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+  }
+
+  .right-hero {
+    width: 67%;
+    height: 67%;
+  }
   #hero__img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+  }
+  .card {
+    width: 100%;
   }
 
   .fig {
