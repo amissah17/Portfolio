@@ -628,11 +628,9 @@ opacity: 1;
   .cards {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.8rem;
   }
-  .card {
-    width: 100%;
-  }
+
   .stackIcons {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -685,9 +683,6 @@ opacity: 1;
     box-sizing: border-box;
     width: 85%;
     margin: auto;
-  }
-  .card {
-    width: 100%;
   }
 
 .hero {
@@ -771,9 +766,6 @@ opacity: 1;
     height: 260px;
   }
 
-  .card {
-    width: 100%;
-  }
 
   .fig {
     margin: 0 1.5rem;
@@ -786,7 +778,6 @@ opacity: 1;
     width: 90%;
     margin: auto;
   }
-
   .right-hero {
     width: 250px;
     height: 250px;
@@ -794,12 +785,12 @@ opacity: 1;
   #hero__img {
     width: 100%;
   }
-  .card {
-    width: 100%;
-  }
 
   .fig {
     margin: 0 1rem;
+  }
+  .cards {
+    gap: 1.8rem;
   }
   .card__content p {
     width: 100%;
