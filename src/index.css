@@ -632,6 +632,7 @@ opacity: 1;
   .cards {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
     gap: 1.8rem;
   }
   .card {
