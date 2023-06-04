@@ -628,7 +628,7 @@ opacity: 1;
   .cards {
     display: grid;
     grid-template-columns: 1fr;
-    gap: unset;
+    gap: 1.5rem;
   }
   .card {
     width: 100%;
@@ -797,9 +797,14 @@ opacity: 1;
   .card {
     width: 100%;
   }
+
+  .card__cover {
+    width: 100%;
+  }
   .card__content p {
     width: 100%;
   }
+
   .fig {
     margin: 0 1rem;
   }
