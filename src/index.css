@@ -102,7 +102,6 @@ section {
   background-color: var(--bg-color);
   display: grid;
   place-items: center;
-  box-sizing: content-box;
 }
 
 /* Setting the background of the hero section to a gradient. */
@@ -191,18 +190,18 @@ a.btn  {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 100px;
+  gap: 30px;
   align-items: center;
   padding: 1.875rem 0;
   text-align: center;
   color: var(--txt-color);
 }
 .stack-heading {
+  padding: 20px 0;
   font-size: 2rem;
   font-weight: bold;
 }
 .desc2 {
-  margin-top: 20px;
   padding: 0.5rem;
   font-weight: 500;
   opacity: 0.8;
@@ -341,7 +340,7 @@ a.btn  {
 .contact {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
   color: var(--txt-color);
@@ -471,7 +470,8 @@ opacity: 1;
 
   .hero {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    grid-template-rows: 2fr 1fr;
+    gap: 2rem;
     
   }
 
@@ -502,9 +502,12 @@ opacity: 1;
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
     place-items: center;
     gap: 2rem;
+  }
+
+  .card {
+    width: 100%;
   }
 
   #hero__img {
@@ -590,7 +593,8 @@ opacity: 1;
 
   .hero {
     grid-template-columns: 1fr;
-    gap: 2.2rem;
+    grid-template-rows: 2fr 1fr;
+    gap: 1.8rem;
   }
 
   .left-hero {
@@ -610,7 +614,7 @@ opacity: 1;
   }
 
   .txt {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .socials {
     left: 7px;
@@ -629,6 +633,9 @@ opacity: 1;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.8rem;
+  }
+  .card {
+    width: 100%;
   }
 
   .stackIcons {
@@ -652,12 +659,12 @@ opacity: 1;
   .contactEmail {
     width: 100%;
     height: 180px;
-    padding: 20px 0;
+    padding: 10px;
   }
 
   .contactEmail a {
     font-size: 1.3rem;
-     display: flex;
+    display: flex;
     flex-direction: column;
     gap: 14px;
     justify-content: center;
@@ -685,9 +692,6 @@ opacity: 1;
     margin: auto;
   }
 
-.hero {
-  padding:100px 0 70px;
-}
   .left-hero {
     width: 100%;
   }
@@ -705,6 +709,10 @@ opacity: 1;
   .project-heading,
   .contact-heading {
     font-size: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
   }
 
   .fig {
@@ -736,7 +744,6 @@ opacity: 1;
   }
 
   .contactEmail {
-    width: 100%;
     height: 120px;
   }
 
@@ -766,9 +773,14 @@ opacity: 1;
     height: 260px;
   }
 
-
   .fig {
     margin: 0 1.5rem;
+  }
+  .contactEmail {
+    width: 100%;
+  }
+  .contactEmail p {
+    width: 100%;
   }
 }
 
@@ -792,10 +804,16 @@ opacity: 1;
   .cards {
     gap: 1.8rem;
   }
+  .card__content {
+    padding: 10px;
+  }
   .card__content p {
     width: 100%;
   }
   .stackIcons {
     gap: 15px;
+  }
+  .contactEmail a {
+    font-size: 1rem;
   }
 }
