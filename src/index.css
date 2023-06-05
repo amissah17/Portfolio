@@ -502,7 +502,8 @@ opacity: 1;
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    place-items: center;
+    grid-template-rows: repeat(2, 1fr);
+    place-content: center;
     gap: 2rem;
   }
 
@@ -633,6 +634,7 @@ opacity: 1;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+    place-content: center;
     gap: 1.8rem;
   }
   .card {
