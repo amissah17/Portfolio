@@ -185,10 +185,10 @@ a.btn  {
   color: var(--txt-color);
 }
 .stack-heading {
-  padding: 20px 0;
+  margin-bottom: 20px;
   font-size: 2rem;
   font-weight: bold;
-}
+}gi
 .desc2 {
   font-weight: 500;
   opacity: 0.8;
