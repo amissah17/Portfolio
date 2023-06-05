@@ -501,10 +501,10 @@ opacity: 1;
 
   .cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: repeat(2, 1fr); */
-    place-content: center;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
     gap: 2rem;
+    place-content: center;
   }
 
   .card {
