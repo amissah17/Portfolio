@@ -631,12 +631,12 @@ opacity: 1;
   .cards {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
     place-content: center;
     gap: 1.8rem;
   }
   .card {
-    width: 100%;
+    width: unset;
   }
 
   .stackIcons {
