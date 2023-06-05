@@ -273,7 +273,7 @@ a.btn  {
 .card__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 1rem;
   padding: 1.25rem;
   background-color: #3232327a;
   border-bottom-left-radius: 12px;
@@ -287,11 +287,12 @@ a.btn  {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 1.8rem;
+  height: 100%;
 }
 .card__content p {
   max-height: 6.25rem;
-  width: 15.625rem;
+  width: 100%;
   opacity: 0.8;
 }
 
