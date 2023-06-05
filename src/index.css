@@ -252,8 +252,6 @@ a.btn  {
 }
 
 .project-heading {
-  display: grid;
-  place-items: center;
   padding: 1.875rem 0;
   font-size: 2rem;
   font-weight: bold;
